@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Matemáticos</title>
+</head>
+
+<body>
+    <h1>Calculadora Simples</h1>
+
+    <script>
+        
+        let operando1 = prompt("Digite o primeiro número");
+        let operando2 = prompt("Digite o primeiro número");
+        
+        
+        let conversao1 = parseInt(operando1);
+        let conversao2 = parseInt(operando2);
+
+        let soma = conversao1 + conversao2;
+        let subtracao = conversao1 - conversao2
+        let multiplicacao = conversao1 * conversao2
+        let divisao = conversao1 / conversao2
+        let restoDivisao = conversao1 % conversao2
+        let exponenciacao = conversao1 ** conversao2
+        
+        
+        document.write(`Adição: ${operando1} + ${operando2} = ${soma}`);
+        document.write(`<br>Subtração: ${operando1} - ${operando2} = ${subtracao}`);
+        document.write(`<br>Multiplicação: ${operando1} x ${operando2} = ${multiplicacao}`);
+        document.write(`<br>Divisão: ${operando1} / ${operando2} = ${divisao}`);
+        document.write(`<br>Resto da divisão: ${operando1} % ${operando2} = ${restoDivisao}`);
+        document.write(`<br>Exponenciação: ${operando1} ** ${operando2} = ${exponenciacao}`);
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Manipulação de Array</h1>
+    <script>
+        // Declaração de uma array
+        let frutas
+
+        // Inicialização
+        frutas = ["maçã", "banana", "laranja"]
+
+        // Declaração e inicialização
+        let notas = [8, 7, 9, 10]
+
+        document.write(`Documentos da array: ${frutas}`);
+
+        let segundoElemento = frutas[1]
+        document.write(`<br>Segundo elemento: ${segundoElemento}<br>`);
+
+        // Alterar um valor do array nomeArray[indice] = novoValor
+
+        frutas[1] = "goiaba"
+        document.write(`Segundo elemento da array após a alterção: ${frutas[1]}<br>`);
+
+        document.write(`A quantidade de elementos da array frutas é ${frutas.length}<br>`);
+
+        frutas.push("uva")
+
+        document.write(`Elemento da array: ${frutas}<br>`);
+
+        frutas.push("manga")
+
+        document.write(`Elemento da array: ${frutas}<br>`);
+
+        let frutaRemovida = frutas.pop()
+        document.write(`A ${frutaRemovida} foi excluida da array frutas<br>`);
+        document.write(`Elemento da array: ${frutas}<br>`);
+
+        frutas.splice(2, 0, "manga")
+        document.write(`Elemento da array: ${frutas}<br>`);
+
+
+
+    </script>
+</body>
+</html>

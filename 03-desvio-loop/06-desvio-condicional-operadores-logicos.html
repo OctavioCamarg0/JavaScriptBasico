@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores lógicos - Octávio Camargo Cavalcante</title>
+</head>
+<body>
+    <script>
+        let texto = prompt(`Digite se o aluno foi aprovado(true) ou reprovado(false): `)
+        let aprovado = texto == "true"
+        let frequencia = parseInt(prompt(`Digite a frequencia do aluno: `))
+        if (aprovado == true && frequencia >= 75) {
+            document.write(`O aluno foi aprovado por nota e frequência`)
+        }
+        else if (aprovado == true && frequencia < 75) {
+            document.write(`O aluno foi aprovado por nota e reprovado por frequência`)
+        }
+        else if (!aprovado && frequencia >= 75) {
+            document.write(`O aluno foi reprovado por nota e aprovado por frequência`)
+        }
+        else {
+            document.write(`O aluno foi reprovado por nota e frequência`)
+        }
+    </script>
+</body>
+</html>

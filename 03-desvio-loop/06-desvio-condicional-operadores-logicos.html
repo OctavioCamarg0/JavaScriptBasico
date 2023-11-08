@@ -8,20 +8,20 @@
 </head>
 <body>
     <script>
-        let texto = prompt(`Digite se o aluno foi aprovado(true) ou reprovado(false): `)
+        let texto = prompt(`Digite se o aluno foi aprovado(true) ou reprovado(false): `).toLowerCase();
         let aprovado = texto == "true"
-        let frequencia = parseInt(prompt(`Digite a frequencia do aluno: `))
+        let frequencia = parseInt(prompt(`Digite a frequencia do aluno: `));
         if (aprovado == true && frequencia >= 75) {
-            document.write(`O aluno foi aprovado por nota e frequência`)
+            document.write(`O aluno foi aprovado por nota e frequência`);
         }
         else if (aprovado == true && frequencia < 75) {
-            document.write(`O aluno foi aprovado por nota e reprovado por frequência`)
+            document.write(`O aluno foi aprovado por nota e reprovado por frequência`);
         }
         else if (!aprovado && frequencia >= 75) {
-            document.write(`O aluno foi reprovado por nota e aprovado por frequência`)
+            document.write(`O aluno foi reprovado por nota e aprovado por frequência`);
         }
         else {
-            document.write(`O aluno foi reprovado por nota e frequência`)
+            document.write(`O aluno foi reprovado por nota e frequência`);
         }
     </script>
 </body>

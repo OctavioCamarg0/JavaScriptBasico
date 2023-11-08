@@ -8,15 +8,15 @@
 </head>
 <body>
     <script>
-        let pontuacao = prompt("Qual foi sua pontuação? ")
+        let pontuacao = parseInt(prompt("Qual foi sua pontuação? "));
         if (pontuacao >= 90) {
-            document.write(`Sua pontuação foi maior ou igual a 90. APROVADO com distinção!`)
+            document.write(`Sua pontuação foi maior ou igual a 90. APROVADO com distinção!`);
         }
         else if (pontuacao >= 60) {
-            document.write(`Sua pontuação foi maior ou igual a 60. APROVADO!`)
+            document.write(`Sua pontuação foi maior ou igual a 60. APROVADO!`);
         }
         else {
-            document.write(`Sua pontuação foi menor que 60. REPROVADO!`)
+            document.write(`Sua pontuação foi menor que 60. REPROVADO!`);
         }
     </script>
 </body>

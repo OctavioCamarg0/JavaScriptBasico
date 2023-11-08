@@ -8,9 +8,19 @@
 </head>
 <body>
     <script>
-        for (var i = 0; i < 5; i++) {
-        document.write("Número: " + i + "<br>");
-}
+        let inicio = parseInt(prompt("Digite o inicio da sequência:"));
+        let fim = parseInt(prompt("Digite o fim da sequência:"));
+
+        if (inicio < fim) {
+            for (i = inicio; i <= fim; i++) {
+                document.write("Número: " + i + "<br>");
+            }
+        }
+        else if (inicio > fim) {
+            for (i = inicio; i >= fim; i--) {
+                document.write("Número: " + i + "<br>");
+            }
+        }
     </script>
 </body>
 </html>

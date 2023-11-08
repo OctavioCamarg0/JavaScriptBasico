@@ -8,23 +8,20 @@
 </head>
 <body>
     <script>
-        var nomes = [];
-        var nome;
-        var contador = 0;
-        
+        let nomes = [];
+
         while (true) {
-            nome = prompt("Digite um nome ou 'sair' para encerrar:");
+            let nome = prompt("Digite um nome ou 'sair' para encerrar:");
             if (nome.toLowerCase() === "sair") {
                 break;
             }
             nomes.push(nome);
-            contador++;
         }
         
-        document.write("Você digitou " + contador + " nome(s). " + "<br>");
-        document.write("Nomes informados: ");
+        document.write("Você digitou " + (nomes.length) + " nome(s). " + "<br>");
+        document.write("Nomes informados: </br>");
         for (var i = 0; i < nomes.length; i++) {
-            document.write(nomes[i] + "<br>");
+            document.write(nomes[i].toUpperCase() + "<br>");
         }
     </script>
 </body>

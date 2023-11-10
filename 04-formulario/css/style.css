@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#cpf {
+    padding: 5px;
+    font-size: 16px;
+}
+
+#validar-botao {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+#validar-botao:hover {
+    background-color: #0056b3;
+}
